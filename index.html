@@ -27,7 +27,9 @@
 
     <!-- HAMBURGER NAV -->
     <nav id="hamburger-nav">
-      <div class="logo">Anik Adhikari</div>
+      <div class="logo">
+        <img src="./assets/logo.png" alt="logo" />Anik Adhikari
+      </div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -47,57 +49,83 @@
     <!-- PROFILE -->
     <section id="profile">
       <div id="socials-container">
-        <img
-          src="./assets/linkedin.png"
-          alt="My Linkedin Profile"
-          class="icon"
-          onclick="location.href='https://www.linkedin.com/in/anikadhikari'"
-        />
+        <a href="https://www.linkedin.com/in/anikadhikari">
+          <img
+            src="./assets/linkedin.png"
+            alt="My Linkedin Profile"
+            class="icon"
+          />
+        </a>
 
-        <img
-          src="./assets/github.png"
-          alt="My Github Profile"
-          class="icon"
-          onclick="location.href='https://github.com/AnikAdhikari7'"
-        />
-        <img
-          src="./assets/instagram.png"
-          alt="My Linkedin Profile"
-          class="icon"
-          onclick="location.href='https://www.linkedin.com/in/anikadhikari'"
-        />
-        <img
-          src="./assets/twitter.png"
-          alt="My Linkedin Profile"
-          class="icon"
-          onclick="location.href='https://www.linkedin.com/in/anikadhikari'"
-        />
+        <a href="https://github.com/AnikAdhikari7">
+          <img src="./assets/github.png" alt="My Github Profile" class="icon" />
+        </a>
+
+        <a href="https://twitter.com/MeAnikAdhikari">
+          <img
+            src="./assets/twitter.png"
+            alt="My Twitter Profile"
+            class="icon"
+          />
+        </a>
+
+        <a href="https://www.instagram.com/meanikadhikari">
+          <img
+            src="./assets/instagram.png"
+            alt="My Instagram Profile"
+            class="icon"
+          />
+        </a>
+
+        <a href="https://t.me/AnikAdhikari">
+          <img
+            src="./assets/telegram.png"
+            alt="My Telegrma Profile"
+            class="icon"
+          />
+        </a>
       </div>
-      <div class="section__pic-container">
-        <img
-          src="./assets/profile-pic.png"
-          alt="Anik Adhkari profile pic"
-          style="border-radius: 50%"
-        />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Anik Adhikari</h1>
-        <p class="section__text__p2">Software Devoloper</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
+      <div class="profile-main">
+        <div class="section__pic-container">
+          <img
+            src="./assets/profile-pic.png"
+            alt="Anik Adhkari profile pic"
+            style="border-radius: 50%"
+          />
+        </div>
+        <div class="section__text">
+          <p>
+            <img
+              src="https://raw.githubusercontent.com/nixin72/nixin72/master/wave.gif"
+              alt="hi"
+              width="25px"
+            />
+          </p>
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Anik Adhikari</h1>
+          <p class="section__text__p2">Software Developer</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./assets/AnikAdhikari-CV.pdf')"
+            >
+              Download CV
+            </button>
+            <button
+              class="btn btn-color-1"
+              onclick="location.href='./#contact'"
+            >
+              Contact Info
+            </button>
+          </div>
         </div>
       </div>
       <div class="scroll-down" onclick="location.href='./#about'">
-        <img class="icon" src="./assets/mouse.png" alt="mouse" />
+        <img
+          class="icon"
+          src="https://media.giphy.com/media/FOF8kogyNXMnU8aNT7/giphy.gif"
+          alt="mouse"
+        />
         <div class="scroll-text">
           <p>Scroll Down</p>
           <img class="icon" src="./assets/arrow.png" alt="down-arrow" />
@@ -119,6 +147,7 @@
         </div>
         <div class="about-details-container">
           <div class="about-containers">
+            <!-- about - education -->
             <div class="details-container">
               <img
                 src="./assets/education.png"
@@ -126,11 +155,17 @@
                 class="icon"
               />
               <h3>Education</h3>
+              <br />
               <p>
-                Higher Secondary - PNBI, 2019-21 <br />
-                BCA - NSEC, 2021-24
+                <span> 2019-21 ⤵ </span>
+                <br />
+                &emsp; Higher Secondary - PNBI <br /><br />
+                <span>2021-24 ⤵ </span>
+                <br />
+                &emsp; BCA - NSEC
               </p>
             </div>
+            <!-- about - experience -->
             <div class="details-container">
               <img
                 src="./assets/experience.png"
@@ -138,22 +173,18 @@
                 class="icon"
               />
               <h3>Experience</h3>
+              <br />
               <p>
-                1 year <br />
-                App Team Member, GDSC-NSEC
+                <span>2022-23 ⤵</span>
+                <br />
+                &emsp; App Team Member, GDSC-NSEC
               </p>
             </div>
           </div>
           <div class="text-container">
             <p>
-              Hello!
-              <img
-                src="https://raw.githubusercontent.com/nixin72/nixin72/master/wave.gif"
-                alt="hi"
-                width="5%"
-              />
-              I'm Anik Adhikari, a student who enjoys learning and working with
-              different types of people. Speaking of myself, I am very
+              Hi!👋 I'm Anik Adhikari, a student who enjoys learning and working
+              with different types of people. Speaking of myself, I am very
               enthusiastic about knowing the unknown. I enjoy exploring new
               technologies and creating solutions that have some positive impact
               on society and also everyday life!
@@ -175,19 +206,19 @@
       <h1 class="title">Skills</h1>
       <div class="skills-details-container">
         <div class="about-containers">
-          <!-- FRONTED SKILLS -->
+          <!-- LANGUAGES -->
           <div class="details-container">
-            <h2 class="skills-sub-title">Fronted Development</h2>
+            <h2 class="skills-sub-title">Languages</h2>
             <div class="article-container">
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/skills-icon/java.png"
                   alt="Skills icon"
                   class="icon"
                 />
                 <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
+                  <h3>JAVA</h3>
+                  <p></p>
                 </div>
               </article>
               <article>
@@ -237,7 +268,130 @@
             </div>
           </div>
 
-          <!-- BACKEND SKILLS -->
+          <!-- LIBRARIES, FRAMEWORKS -->
+          <div class="details-container">
+            <h2 class="skills-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Firebase</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git & GitHub</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- DATABASES -->
+          <div class="details-container">
+            <h2 class="skills-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Firebase</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git & GitHub</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <!-- GRAPHICS AND OTHER TOOLS -->
           <div class="details-container">
             <h2 class="skills-sub-title">Backend Development</h2>
             <div class="article-container">
@@ -317,22 +471,22 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-1.png"
-                alt="Project 1"
+                src="./assets/projects-thumbnail/calculator.png"
+                alt="Project - calculator"
                 class="project-img"
               />
             </div>
-            <h2 class="skills-sub-title project-title">Project 1</h2>
+            <h2 class="skills-sub-title project-title">Calculator</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/AnikAdhikari7'"
+                onclick="location.href='https://github.com/AnikAdhikari7/CalculatorApp'"
               >
                 GitHub
               </button>
               <button
                 class="btn btn-color-1 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/AnikAdhikari7/CalculatorApp/releases'"
               >
                 Live Demo
               </button>
@@ -341,22 +495,23 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-2.png"
-                alt="Project 1"
+                src="./assets/projects-thumbnail/shop-app.png"
+                alt="Project - shopapp"
                 class="project-img"
               />
             </div>
-            <h2 class="skills-sub-title project-title">Project 2</h2>
+            <h2 class="skills-sub-title project-title">Shop-App</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/AnikAdhikari7'"
+                onclick="location.href='https://github.com/AnikAdhikari7/Shop-App'"
               >
                 GitHub
               </button>
+              <!-- live demo is not mentioned -->
               <button
                 class="btn btn-color-1 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/AnikAdhikari7/Shop-App'"
               >
                 Live Demo
               </button>
@@ -365,22 +520,22 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-3.png"
-                alt="Project 1"
+                src="./assets/projects-thumbnail/memehub.png"
+                alt="Project - memehub"
                 class="project-img"
               />
             </div>
-            <h2 class="skills-sub-title project-title">Project 3</h2>
+            <h2 class="skills-sub-title project-title">MemeHub</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/AnikAdhikari7'"
+                onclick="location.href='https://github.com/AnikAdhikari7/MemeHub'"
               >
                 GitHub
               </button>
               <button
                 class="btn btn-color-1 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/AnikAdhikari7/MemeHub/releases'"
               >
                 Live Demo
               </button>
@@ -403,7 +558,7 @@
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
           <img
-            src="./assets/email.png"
+            src="./assets/rounded-icon/email.png"
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
@@ -413,7 +568,17 @@
         </div>
         <div class="contact-info-container">
           <img
-            src="./assets/linkedin.png"
+            src="./assets/rounded-icon/github.png"
+            alt="Github icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://github.com/AnikAdhikari7">GitHub</a>
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/rounded-icon/linkedin.png"
             alt="Linkedin icon"
             class="icon contact-icon"
           />
@@ -423,17 +588,38 @@
         </div>
         <div class="contact-info-container">
           <img
-            src="./assets/github.png"
-            alt="Github icon"
+            src="./assets/rounded-icon/twitter.png"
+            alt="Twitter icon"
             class="icon contact-icon"
           />
           <p>
-            <a href="https://github.com/AnikAdhikari7">GitHub</a>
+            <a href="https://twitter.com/MeAnikAdhikari">Twitter</a>
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/rounded-icon/instagram.png"
+            alt="Instagram icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.instagram.com/meanikadhikari">Instagram</a>
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/rounded-icon/telegram.png"
+            alt="Telegram icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://t.me/AnikAdhikari">Telegram</a>
           </p>
         </div>
       </div>
     </section>
 
+    <!-- FOOTER -->
     <footer>
       <nav>
         <div class="nav-links-container">
