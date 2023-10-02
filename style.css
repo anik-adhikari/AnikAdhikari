@@ -336,6 +336,10 @@ section {
   margin-top: 2rem;
 }
 
+#about .details-container:hover {
+  box-shadow: 5px 10px 50px #000000;
+}
+
 .about-details-container {
   justify-content: center;
   flex-direction: column;
@@ -400,7 +404,7 @@ h3 {
 .skills-sub-title {
   color: rgb(255, 255, 255);
   font-weight: 600;
-  font-size: 1.75rem;
+  font-size: 1.3rem;
   margin-bottom: 2rem;
 }
 
@@ -410,24 +414,38 @@ h3 {
   flex-direction: column;
 }
 
+#skills .details-container:hover {
+  box-shadow: 5px 10px 50px #000000;
+}
+
 .article-container {
   display: flex;
-  text-align: initial;
+  text-align: center;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 2.5rem;
+  gap: 1rem;
   justify-content: space-around;
 }
 
 article {
   display: flex;
   width: 10rem;
-  justify-content: space-around;
+  text-align: start;
+  justify-content: flex-start;
   gap: 0.5rem;
 }
 
-skills.icon {
+.article-container p {
+  font-size: x-small;
+  font-weight: lighter;
+
+  opacity: 20;
+}
+
+#skills .icon {
   cursor: default;
+  height: 20px;
+  width: 20px;
 }
 
 /* PROJECTS SECTION */
@@ -455,6 +473,12 @@ skills.icon {
 .project-title {
   margin: 1rem;
   color: black;
+}
+
+#projects .details-container p {
+  color: #000000;
+  margin: 1rem;
+  text-align: center;
 }
 
 /* .project-btn {
