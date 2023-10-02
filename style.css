@@ -336,6 +336,10 @@ section {
   margin-top: 2rem;
 }
 
+#about .details-container:hover {
+  box-shadow: 5px 10px 50px #000000;
+}
+
 .about-details-container {
   justify-content: center;
   flex-direction: column;
@@ -353,17 +357,16 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: rgb(34, 38, 47);
+  background: transparent;
   border-radius: 2rem;
-  /* border: rgb(255, 253, 253) 0.1rem solid;
-  border-color: rgb(255, 255, 255); */
+  /* border: rgb(0, 0, 0) 0.1rem solid; */
   text-align: center;
   box-shadow: 5px 10px 20px #000000;
 }
 
-.details-container:hover {
+/* .details-container:hover {
   box-shadow: 5px 10px 50px #000000;
-}
+} */
 
 .details-container > p,
 h3 {
@@ -373,7 +376,7 @@ h3 {
 .details-container > p {
   text-align: start;
 }
-.details-container span{
+.details-container span {
   font-size: smaller;
   color: #f571bc;
 }
@@ -401,7 +404,7 @@ h3 {
 .skills-sub-title {
   color: rgb(255, 255, 255);
   font-weight: 600;
-  font-size: 1.75rem;
+  font-size: 1.3rem;
   margin-bottom: 2rem;
 }
 
@@ -411,30 +414,49 @@ h3 {
   flex-direction: column;
 }
 
+#skills .details-container:hover {
+  box-shadow: 5px 10px 50px #000000;
+}
+
 .article-container {
   display: flex;
-  text-align: initial;
+  text-align: center;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 2.5rem;
+  gap: 1rem;
   justify-content: space-around;
 }
 
 article {
   display: flex;
   width: 10rem;
-  justify-content: space-around;
+  text-align: start;
+  justify-content: flex-start;
   gap: 0.5rem;
 }
 
-skills.icon {
+.article-container p {
+  font-size: x-small;
+  font-weight: lighter;
+
+  opacity: 20;
+}
+
+#skills .icon {
   cursor: default;
+  height: 20px;
+  width: 20px;
 }
 
 /* PROJECTS SECTION */
 
 #projects {
   position: relative;
+}
+
+.project-containers {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .color-container {
@@ -453,23 +475,29 @@ skills.icon {
   color: black;
 }
 
+#projects .details-container p {
+  color: #000000;
+  margin: 1rem;
+  text-align: center;
+}
+
 /* .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
 } */
 
-.swiper {
+/* .swiper {
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
-}
+} */
 
-.swiper-slide {
+/* .swiper-slide {
   background-position: center;
   background-size: cover;
   width: 300px;
   height: 300px;
-}
+} */
 
 /* CONTACT */
 
@@ -488,7 +516,7 @@ skills.icon {
   border: rgb(255, 255, 255) 0.1rem solid;
   border-color: rgb(255, 255, 255);
   background: transparent;
-  margin: 2rem auto;
+  margin: 5rem auto;
   padding: 0.5rem;
 }
 
@@ -516,7 +544,7 @@ skills.icon {
 
 footer {
   position: relative;
-  height: 26vh;
+  height: 30vh;
   margin: 0 1 rem;
 }
 
