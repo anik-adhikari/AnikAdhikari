@@ -5,7 +5,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-family: "Poppins", sans-serif;
-  background: radial-gradient(purple, black 60%);
+  background: radial-gradient(purple, rgb(0, 0, 0) 60%);
   color: white;
 }
 
@@ -420,26 +420,27 @@ h3 {
 
 .article-container {
   display: flex;
-  text-align: center;
+  /* text-align: center; */
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 1rem;
-  justify-content: space-around;
+  gap: 0.8rem;
+  justify-content: center;
+  align-items: center;
 }
 
 article {
   display: flex;
-  width: 10rem;
+  width: 7rem;
   text-align: start;
-  justify-content: flex-start;
-  gap: 0.5rem;
+  justify-content: start;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 .article-container p {
   font-size: x-small;
   font-weight: lighter;
-
-  opacity: 20;
+  opacity: 0.7;
 }
 
 #skills .icon {
