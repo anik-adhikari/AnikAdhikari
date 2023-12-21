@@ -14,42 +14,51 @@
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-    <!-- DESKTOP NAV -->
-    <nav id="desktop-nav">
-      <div class="logo">
-        <img src="./assets/logo.png" alt="logo" /> <span>Anik Adhikari</span>
-      </div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#profile">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+    <div id="cursor">
+    </div>
+    <div id="cursor-blur">
+    </div>
 
-    <!-- HAMBURGER NAV -->
-    <nav id="hamburger-nav">
-      <div class="logo">
-        <img src="./assets/logo.png" alt="logo" />Anik Adhikari
-      </div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+    <!-- NAV BARS -->
+    <div id="nav-bars">
+    <!-- DESKTOP NAV -->
+      <nav id="desktop-nav">
+        <div class="logo">
+          <img src="./assets/logo.png" alt="logo" /> <span>Anik Adhikari</span>
         </div>
-        <div class="menu-links">
-          <li><a href="#profile" onclick="toggleMenu()">Home</a></li>
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#profile">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
-      </div>
-    </nav>
+      </nav>
+  
+      <!-- HAMBURGER NAV -->
+      <nav id="hamburger-nav">
+        <div class="logo">
+          <img src="./assets/logo.png" alt="logo" />Anik Adhikari
+        </div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#profile" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+    </div>
+    
 
     <!-- PROFILE -->
     <section id="profile">
@@ -101,7 +110,7 @@
         <div class="section__text">
           <p>
             <img
-              src="https://raw.githubusercontent.com/nixin72/nixin72/master/wave.gif"
+              src="https://media.giphy.com/media/m0dmKBkncVETJv2h0S/giphy.gif"
               alt="hi"
               width="25px"
             />
@@ -217,6 +226,17 @@
             <div class="article-container">
               <article>
                 <img
+                  src="./assets/skills-icon/javascript.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h4>JavaScript</h4>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
                   src="./assets/skills-icon/java.png"
                   alt="Skills icon"
                   class="icon"
@@ -228,12 +248,12 @@
               </article>
               <article>
                 <img
-                  src="./assets/skills-icon/javascript.png"
+                  src="./assets/skills-icon/python.png"
                   alt="Skills icon"
                   class="icon"
                 />
                 <div>
-                  <h4>JavaScript</h4>
+                  <h4>Pyhton</h4>
                   <p>Intermediate</p>
                 </div>
               </article>
@@ -259,17 +279,7 @@
                   <p>Basic</p>
                 </div>
               </article>
-              <article>
-                <img
-                  src="./assets/skills-icon/python.png"
-                  alt="Skills icon"
-                  class="icon"
-                />
-                <div>
-                  <h4>Pyhton</h4>
-                  <p>Basic</p>
-                </div>
-              </article>
+              
               
             </div>
           </div>
@@ -278,6 +288,39 @@
           <div class="details-container">
             <h2 class="skills-sub-title">Libraries & Frameworks</h2>
             <div class="article-container">
+              <article>
+                <img
+                  src="./assets/skills-icon/react.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h4>React</h4>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/skills-icon/nodejs.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h4>NodeJS</h4>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/skills-icon/expressjs.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h4>ExpressJS</h4>
+                  <p>Experienced</p>
+                </div>
+              </article>
               <article>
                 <img
                   src="./assets/skills-icon/android.png"
@@ -297,42 +340,11 @@
                 />
                 <div>
                   <h4>Flutter</h4>
-                  <p>Intermediate</p>
+                  <p>Basics</p>
                 </div>
               </article>
-              <article>
-                <img
-                  src="./assets/skills-icon/nodejs.png"
-                  alt="Skills icon"
-                  class="icon"
-                />
-                <div>
-                  <h4>NodeJS</h4>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/skills-icon/expressjs.png"
-                  alt="Skills icon"
-                  class="icon"
-                />
-                <div>
-                  <h4>ExpressJS</h4>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/skills-icon/react.png"
-                  alt="Skills icon"
-                  class="icon"
-                />
-                <div>
-                  <h4>React</h4>
-                  <p>Intermediate</p>
-                </div>
-              </article>
+              
+              
             </div>
           </div>
           <!-- TOOLS AND PLATFORMS-->
@@ -348,7 +360,7 @@
                 />
                 <div>
                   <h4>Git/GitHub</h4>
-                  <p>Intermediate</p>
+                  <p>Experienced</p>
                 </div>
               </article>
               <article>
@@ -370,7 +382,7 @@
                 />
                 <div>
                   <h4>Linux</h4>
-                  <p>Basic</p>
+                  <p>Intermediate</p>
                 </div>
               </article>
               <article>
@@ -393,13 +405,13 @@
             
               <article>
                 <img
-                  src="./assets/skills-icon/firebase.png"
+                  src="./assets/skills-icon/mogodb.png"
                   alt="Skills icon"
                   class="icon"
                 />
                 <div>
-                  <h4>Firebase</h4>
-                  <p>Intermediate</p>
+                  <h4>MongoDB</h4>
+                  <p>Experienced</p>
                 </div>
               </article>
               <article>
@@ -410,21 +422,33 @@
                 />
                 <div>
                   <h4>MySQL</h4>
-                  <p>Basic</p>
+                  <p>Intermediate</p>
                 </div>
               </article>
               <article>
                 <img
-                  src="./assets/skills-icon/mogodb.png"
+                  src="./assets/skills-icon/appwrite.png"
                   alt="Skills icon"
                   class="icon"
                 />
                 <div>
-                  <h4>MongoDB</h4>
-                  <p>Basic</p>
+                  <h4>Appwrite</h4>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/skills-icon/firebase.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h4>Firebase</h4>
+                  <p>Intermediate</p>
                 </div>
               </article>
               
+        
             </div>
             </div>
           </div>
@@ -784,7 +808,7 @@
         </div>
       </nav>
       <p>
-        Copyright &#169; 2023 <a href="./#profile">Anik Adhikari</a>. All Rights
+        Copyright &#169; 2024 <a href="./#profile">Anik Adhikari</a>. All Rights
         Reserved
       </p>
       <img
@@ -794,6 +818,14 @@
         onclick="location.href='./#profile'"
       />
     </footer>
+
+    
+    <!--  
+    <!-- gsap -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <!-- scroll trigger -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js" integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
