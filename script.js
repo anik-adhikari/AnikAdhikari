@@ -2,10 +2,12 @@ const cursor = document.querySelector('#cursor');
 const cursorBlur = document.querySelector('#cursor-blur');
 
 document.addEventListener('mousemove', (dets) => {
-    cursor.style.left = dets.x - 10 + 'px';
-    cursor.style.top = dets.y - 10 + 'px';
-    cursorBlur.style.left = dets.x - 200 + 'px';
-    cursorBlur.style.top = dets.y - 200 + 'px';
+    if (window.innerWidth > 1024) {
+        cursor.style.left = dets.x - 10 + 'px';
+        cursor.style.top = dets.y - 10 + 'px';
+        cursorBlur.style.left = dets.x - 200 + 'px';
+        cursorBlur.style.top = dets.y - 200 + 'px';
+    }
 });
 
 function toggleMenu() {
