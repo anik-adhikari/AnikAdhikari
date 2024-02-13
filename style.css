@@ -1,11 +1,11 @@
 /* GENERAL */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;900&family=Poppins:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;900&family=Poppins:wght@300;400;500;600&display=swap");
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Poppins', sans-serif;
-    background: radial-gradient(purple, rgb(0, 0, 0) 60%);
+    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins", sans-serif;
+    background: radial-gradient(rgb(60, 0, 60), rgb(0, 0, 0) 60%);
     color: white;
 }
 
@@ -49,7 +49,7 @@ a,
 #cursor-blur {
     height: 400px;
     width: 400px;
-    background-color: rgb(128, 0, 128, 0.35);
+    background-color: rgba(80, 0, 80, 0.35);
     border-radius: 50%;
     position: fixed;
     filter: blur(50px);

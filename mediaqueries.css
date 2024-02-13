@@ -22,6 +22,11 @@
 }
 
 @media screen and (max-width: 1024px) {
+    #cursor,
+    #cursor-blur {
+        display: none;
+    }
+
     #desktop-nav {
         display: none;
     }
