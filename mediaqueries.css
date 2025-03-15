@@ -62,6 +62,9 @@
     .about-containers {
         margin-top: 0;
     }
+    .skills-details-container {
+        margin-top: 2rem;
+    }
     .contact-info-upper-container {
         flex-wrap: wrap;
     }
@@ -88,6 +91,12 @@
     .contact-info-upper-container,
     .btn-container {
         flex-wrap: wrap;
+    }
+    .about-containers {
+        flex-direction: column;
+    }
+    .skills-details-container {
+        margin-top: 2rem;
     }
     .contact-info-container {
         margin: 5px 10px;

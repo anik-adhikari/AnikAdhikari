@@ -34,3 +34,19 @@ let swiper = new Swiper('.mySwiper', {
         el: '.swiper-pagination',
     },
 });
+
+
+// change the about pic in hover
+document.addEventListener("DOMContentLoaded", function () {
+    const aboutPic = document.querySelector(".about-pic");
+    const originalSrc = aboutPic.src;
+    const hoverSrc = "./assets/about-pic-color.png"; // Update with your hover image path
+
+    aboutPic.addEventListener("mouseenter", () => {
+        aboutPic.src = hoverSrc;
+    });
+
+    aboutPic.addEventListener("mouseleave", () => {
+        aboutPic.src = originalSrc;
+    });
+});

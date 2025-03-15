@@ -5,7 +5,8 @@
 body {
     font-family: "Montserrat", sans-serif;
     font-family: "Poppins", sans-serif;
-    background: radial-gradient(rgb(60, 0, 60), rgb(0, 0, 0) 60%);
+    /* background: radial-gradient(circle, #4b2e6f, #000000 60%); */
+    background: black;
     color: white;
 }
 
@@ -41,22 +42,29 @@ a,
 #cursor {
     height: 20px;
     width: 20px;
-    background-color: purple;
+    background-color: #4b2e6f; /* Deep muted purple works well on black
+    /* background-color: #009688; Dark teal */
     border-radius: 50%;
     position: fixed;
     z-index: 9;
 }
+
 #cursor-blur {
     height: 400px;
     width: 400px;
-    background-color: rgba(80, 0, 80, 0.35);
+    background-color: rgba(
+        75,
+        46,
+        111,
+        0.2
+    ); /* Reduced opacity for a softer effect
+    /* background-color: rgba(0, 150, 136, 0.2); */
     border-radius: 50%;
     position: fixed;
     filter: blur(50px);
 }
 
 /* NAV BARS */
-
 #nav-bars {
     width: 100%;
     position: relative;
@@ -228,14 +236,15 @@ section {
     position: relative;
     display: flex;
     justify-content: center;
-    gap: 5rem;
+    gap: 7rem;
     height: 80vh;
 }
 .profile-main {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
+    gap: 7rem;
+    margin-bottom: 7rem;
 }
 
 .section__pic-container {
@@ -272,8 +281,9 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     gap: 2rem;
+    margin-bottom: 7rem;
 }
 
 /* ICONS */
@@ -376,6 +386,7 @@ section {
 }
 
 #about .details-container:hover {
+    background-color: black;
     box-shadow: 5px 10px 50px #000000;
 }
 
@@ -433,6 +444,7 @@ h3 {
 
 .text-container p {
     text-align: justify;
+    margin-bottom: 2rem;
 }
 
 /* SKILLS SECTION */
@@ -452,19 +464,24 @@ h3 {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-top: 7rem;
 }
+
+/* #skills .details-container {
+    transform: rotate3d(1, 1, 1, 10deg);
+} */
 
 #skills .details-container:hover {
     background-color: black;
     box-shadow: 5px 10px 50px #000000;
-    transform: rotate3d(1, 1, 1, 10deg);
+    /* transform: rotate3d(1, 1, 1, 0deg); */
 }
 
 .article-container {
     display: flex;
-    /* text-align: center; */
+    text-align: center;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     gap: 0.8rem;
     justify-content: center;
     align-items: center;
