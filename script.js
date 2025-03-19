@@ -50,3 +50,22 @@ document.addEventListener("DOMContentLoaded", function () {
         aboutPic.src = originalSrc;
     });
 });
+
+// flashlight cursor effect on cursor move
+document.addEventListener("DOMContentLoaded", function () {
+    const cursorBlur = document.getElementById("cursor-blur");
+    let flashTimeout;
+
+    document.addEventListener("mousemove", function () {
+        // Add the pulsing effect whenever the mouse moves.
+        if (!cursorBlur.classList.contains("flash-active")) {
+            cursorBlur.classList.add("flash-active");
+        }
+        // Clear previous timeout if any.
+        clearTimeout(flashTimeout);
+        // Remove the flash effect if there's no mouse movement for 150ms.
+        flashTimeout = setTimeout(() => {
+            cursorBlur.classList.remove("flash-active");
+        }, 150);
+    });
+});
