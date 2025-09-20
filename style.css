@@ -39,7 +39,7 @@ a,
 }
 
 /* FLASH EFFECT for torch-like light */
-@keyframes flash {
+/* @keyframes flash {
     0%,
     100% {
         transform: scale(0.8);
@@ -51,7 +51,7 @@ a,
         opacity: 1;
         filter: blur(0px);
     }
-}
+} */
 
 #cursor {
     height: 20px;
@@ -63,8 +63,8 @@ a,
 }
 
 #cursor-blur {
-    height: 300px; /* Changed size to be a bit smaller */
-    width: 300px;
+    height: 400px; /* Changed size to be a bit smaller */
+    width: 400px;
     background: radial-gradient(
         circle,
         rgba(155, 119, 227, 0.8) 0%,
@@ -78,9 +78,9 @@ a,
 }
 
 /* This class adds the pulsing flashlight effect */
-.flash-active {
+/* .flash-active {
     animation: flash 0.5s ease-in-out 1 alternate;
-}
+} */
 
 /* NAV BARS */
 #nav-bars {
