@@ -1,9 +1,11 @@
 # AnikAdhikari
 
-My portfolio... please don't hesitate to contribute!😉 Happy Open Source ❤️
+Portfolio of Anik Adhikari
 
-## Visit the page:
+## Visit the website:
 
 Portfolio: https://anikadhikari.in
+<br/>
+Netlify (main branch): https://anikadhikari.netlify.app
 <br/>
 GitHub Page (dev branch): https://anik-adhikari.github.io/AnikAdhikari
