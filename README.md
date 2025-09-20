@@ -1,9 +1,9 @@
 # AnikAdhikari
 
-Portfolio of mine... please don't hesitate to contribute!😉Happy Opensource ❤️
+My portfolio... please don't hesitate to contribute!😉 Happy Open Source ❤️
 
 ## Visit the page:
 
-Netlify: https://anikadhikari.netlify.app
+Portfolio: https://anikadhikari.in
 <br/>
-GitHub Page (dev branch): https://anikadhikari7.github.io/AnikAdhikari/
+GitHub Page (dev branch): https://anik-adhikari.github.io/AnikAdhikari
